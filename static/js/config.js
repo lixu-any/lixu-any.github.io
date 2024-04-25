@@ -1,5 +1,5 @@
 const CONFIGDATA = {
-	ENV: "prod",
+	ENV: "test",
 	h5: {
 		domain: "https://lixu-any.github.io",
 		appid: "wx48344f6a58180d6e", // 公众号appid
