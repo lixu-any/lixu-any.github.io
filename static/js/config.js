@@ -8,6 +8,19 @@ const CONFIGDATA = {
 
 }
 
+const setConfigData = () => {
+
+	const domain = window.location.protocol + "://" + window.location.host
+	console.log("domain::", domain)
+	CONFIGDATA.h5.domain = domain
+	if (domain.indexOf("localhost") !== -1) {
+		CONFIGDATA.ENV = "test"
+	} else {
+		CONFIGDATA.ENV = "prod"
+	}
+}
+
+
 // 授权地址拼接
 const getConfigScopeUrl = (appid, redirect_uri, scope, state) => {
 	return `${CONFIGDATA.h5.scope_url}?appid=${appid}&redirect_uri=${redirect_uri}&response_type=code&scope=${scope}&state=${state}`
@@ -17,6 +30,7 @@ const getConfigScopeUrl = (appid, redirect_uri, scope, state) => {
 
 export {
 	CONFIGDATA,
+	setConfigData,
 	getConfigScopeUrl,
 
 };
