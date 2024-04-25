@@ -1,0 +1,33 @@
+.content {
+	padding-top: 10px;
+}
+
+.back-icon {
+	border-radius: 15px;
+	width: 34px;
+	height: 34px;
+	background: #000000;
+	filter: opacity(0.5);
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 9999999
+}
+
+
+.back-icon .back {
+	margin-top: 5px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.content_ts{
+	margin-top: 10rpx;
+	font-size: 24rpx;
+	line-height: 40rpx;
+	color: #ed414a !important;
+}
